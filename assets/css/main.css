@@ -316,7 +316,7 @@ input, select, textarea {
 	hr {
 		border-bottom-color: #eeeeee;
 	}
-	
+
 	.legend {
 	font-size: 0.8rem;
 	font-style: italic;
@@ -2067,7 +2067,7 @@ input, select, textarea {
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;
-		
+
 		-moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		-webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -2092,7 +2092,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 980px) {
 
-			
+
 			button,
 			.button {
 				font-size: 0.9rem;
@@ -2100,7 +2100,7 @@ input, select, textarea {
 				line-height: 3.25rem;
 			}
 
-				
+
 				button.large,
 				.button.large {
 					font-size: 1rem;
@@ -2110,7 +2110,7 @@ input, select, textarea {
 
 		}
 
-		
+
 		input[type="button"].disabled,
 		input[type="button"]:disabled,
 		button.disabled,
@@ -2247,7 +2247,7 @@ input, select, textarea {
 		color: #212931;
 	}
 
-	
+
 
 /* Icon */
 
@@ -2322,7 +2322,7 @@ input, select, textarea {
 			display: block;
 			margin: 2.5rem 0;
 			width: 100%;
-			
+
 		}
 
 			.image.fit:first-child {
@@ -2402,8 +2402,8 @@ input, select, textarea {
 			max-width: 600px;
 			margin: 0;
 			border-radius: 7px;
-			background-size: auto 100%; 
-			transition:  0.5s ease-in;   
+			background-size: auto 100%;
+			transition:  0.5s ease-in;
 		}
 
 		.carousel:not(.active){
@@ -2429,12 +2429,12 @@ input, select, textarea {
 			bottom: 5rem;
 			color: #fff;
 		}
-		
+
 		.showcase-title{
 			color: #fff;
 		}
 
-		
+
 		.active .text-popup {
 			visibility: visible;
 			transform: translateY(0px);
@@ -3812,7 +3812,7 @@ input, select, textarea {
 			color: #e2e2e2;
 		}
 
-		
+
 		#footer ul.divided li {
 			border-top-color: #e2e2e2;
 		}
