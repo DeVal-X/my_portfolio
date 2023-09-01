@@ -209,15 +209,15 @@
 					}).trigger('resize.ie-intro-fix');
 				}
 
-			// Hide intro on scroll (> small).
-				breakpoints.on('>small', function() {
+			// Hide intro on scroll (> medium).
+				breakpoints.on('>medium', function() {
 
 					$main.unscrollex();
 
 					$main.scrollex({
 						mode: 'bottom',
-						top: '25vh',
-						bottom: '-50vh',
+						top: '40vh',
+						bottom: '-30vh',
 						enter: function() {
 							$intro.addClass('hidden');
 						},
@@ -228,6 +228,26 @@
 
 				});
 
+        // Hide intro on scroll (<= medium).
+				breakpoints.on('<=medium', function() {
+
+					$main.unscrollex();
+
+					$main.scrollex({
+						mode: 'bottom',
+						top: '70vh',
+						bottom: '-40vh',
+						enter: function() {
+							$intro.addClass('hidden');
+						},
+						leave: function() {
+							$intro.removeClass('hidden');
+						}
+					});
+
+				});
+
+
 			// Hide intro on scroll (<= small).
 				breakpoints.on('<=small', function() {
 
@@ -235,8 +255,8 @@
 
 					$main.scrollex({
 						mode: 'middle',
-						top: '15vh',
-						bottom: '-15vh',
+						top: '10vh',
+						bottom: '-50vh',
 						enter: function() {
 							$intro.addClass('hidden');
 						},

@@ -589,9 +589,13 @@ button.primary:hover,
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  height: 100vh;
+  height: 50vh;
   font-family: "Roboto", sans-serif;
   transition: 0.25s;
+  /*@include dark {
+    background: #232223;
+    color:white;
+  }*/
 }
 .prime .credit {
   position: absolute;
@@ -739,6 +743,7 @@ button.primary:hover,
   display: flex;
   flex-direction: column;
   justify-content: center;
+  line-height: 1;
   margin-left: 10px;
   color: white;
   white-space: pre;
@@ -2868,7 +2873,7 @@ body.is-preload #wrapper.fade-in:before {
   cursor: default;
   text-align: center;
   z-index: 1;
-  min-height: 100vh;
+  min-height: 70vh;
 }
 #intro input, #intro select, #intro textarea {
   color: #ffffff;
@@ -2957,10 +2962,10 @@ body.is-preload #wrapper.fade-in:before {
   -webkit-transform: translateY(2rem);
   -ms-transform: translateY(2rem);
   transform: translateY(2rem);
-  -moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease, visibility 0.5s;
-  -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease, visibility 0.5s;
-  -ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease, visibility 0.5s;
-  transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
+  -moz-transition: opacity 0.6s ease, -moz-transform 0.6s ease, visibility 0.6s;
+  -webkit-transition: opacity 0.6s ease, -webkit-transform 0.6s ease, visibility 0.6s;
+  -ms-transition: opacity 0.6s ease, -ms-transform 0.6s ease, visibility 0.6s;
+  transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s;
   opacity: 0;
   visibility: hidden;
 }
@@ -2989,7 +2994,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 @media screen and (max-width: 980px) {
   #intro {
     padding: 4rem 4rem 2rem 4rem;
-    min-height: 90vh;
+    min-height: 55vh;
   }
   #intro p br {
     display: none;
@@ -3001,7 +3006,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 @media screen and (max-width: 736px) {
   #intro {
     padding: 3rem 2rem 1rem 2rem;
-    min-height: 80vh;
+    min-height: 45vh;
   }
   #intro h1 {
     font-size: 3.25rem;
@@ -3994,4 +3999,4 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=prime.css.map */
