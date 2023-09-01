@@ -252,8 +252,21 @@
 })(jQuery);
 
 //carousel
-
+  //jquery to get rid of
 $(".carousel").click(function(){
     $(".carousel").removeClass("active");
     $(this).addClass("active");
 })
+
+//vanilla, to stay
+var options = document.querySelectorAll(".option");
+
+options.forEach(function(option) {
+  option.addEventListener("click", function() {
+    options.forEach(function(opt) {
+      opt.classList.remove("active");
+    });
+
+    this.classList.add("active");
+  });
+});
