@@ -1,10 +1,11 @@
 {
   "name": "project",
-  "dependencies": {},
   "devDependencies": {
+    "node-sass": "^9.0.0",
     "vite": "latest"
   },
   "scripts": {
+    "compile-scss": "node-sass assets/sass/main.scss assets/css/sec.css",
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
