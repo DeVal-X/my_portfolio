@@ -251,9 +251,3 @@
 
 })(jQuery);
 
-//carousel
-
-$(".carousel").click(function(){
-    $(".carousel").removeClass("active");
-    $(this).addClass("active");
-})
