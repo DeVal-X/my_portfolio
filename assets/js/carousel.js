@@ -1,7 +1,9 @@
 /*--------------------
 Vars
 --------------------*/
-let progress = 3
+//cards est à changer en fonction du nombre de projets à présenter
+const cards = 8
+let progress = 10
 let startX = 0
 let active = 0
 let isDown = false
@@ -45,7 +47,7 @@ Click on Items
 --------------------*/
 $items.forEach((item, i) => {
   item.addEventListener('click', () => {
-    progress = (i/$items.length) * 100 + 10
+    progress = (i/$items.length) * 100 + (100/cards)
     animate()
   })
 })
@@ -82,10 +84,11 @@ const handleMouseUp = () => {
   isDown = false
 }
 
+
 /*--------------------
 Listeners
 --------------------*/
-document.addEventListener('mousewheel', handleWheel)
+//document.addEventListener('mousewheel', handleWheel)
 document.addEventListener('mousedown', handleMouseDown)
 document.addEventListener('mousemove', handleMouseMove)
 document.addEventListener('mouseup', handleMouseUp)
