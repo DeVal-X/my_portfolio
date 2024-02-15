@@ -493,31 +493,33 @@ button,
   border-color: #eeeeee; }
 
 .carousel {
-  position: relative;
   z-index: 1;
   height: 100vh;
   overflow: hidden;
-  pointer-events: none; }
+  pointer-events: auto;
+  width: 100% !important;
+  height: clamp(700px, 50vh, 2000px);
+  padding: 0 !important; }
 
 .carousel-item {
-  --items: 10;
-  --width: clamp(150px, 30vw,  300px);
-  --height: clamp(200px, 40vw,  400px);
-  --x: calc(var(--active) * 400%);
+  --items: 8;
+  --width: clamp(200px, 30vw,  350px);
+  --height: clamp(250px, 40vw,  450px);
+  --x: calc(var(--active) * 1000%);
   --y: calc(var(--active) * 00%);
-  --rot: calc(var(--active) * 00deg);
-  --opacity: calc(var(--zIndex) / var(--items) * 3 - 2);
+  --rot: calc(var(--active) * 90deg);
+  --opacity: calc(var(--zIndex) / var(--items) * 4 - 2 );
   overflow: hidden;
   position: absolute;
   z-index: var(--zIndex);
   width: var(--width);
   height: var(--height);
-  margin: calc(var(--height) * -0.5) 0 0 calc(var(--width) * -0.5);
+  margin: calc(var(--height) * -0.3) 0 0 calc(var(--width) * -0.0);
   border-radius: 10px;
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  left: 35%;
   user-select: none;
-  transform-origin: 0% 100%;
+  transform-origin: center;
   box-shadow: 0 10px 50px 10px rgba(0, 0, 0, 0.5);
   background: black;
   pointer-events: all;
@@ -549,8 +551,11 @@ button,
     bottom: 20px;
     left: 20px;
     transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
-    font-size: clamp(20px, 3vw, 30px);
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.1); }
+    font-size: clamp(20px, 3vw, 30px); }
+    .carousel-item .title a {
+      color: #fff;
+      text-decoration: none;
+      text-shadow: 0 4px 4px rgba(0, 0, 0, 0.1); }
   .carousel-item .num {
     position: absolute;
     z-index: 1;
@@ -596,28 +601,6 @@ button,
     line-height: 1.4;
     text-transform: uppercase;
     opacity: .4; }
-
-.cursor {
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  --size: 40px;
-  width: var(--size);
-  height: var(--size);
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  margin: calc(var(--size) * -0.5) 0 0 calc(var(--size) * -0.5);
-  transition: transform 0.85s cubic-bezier(0, 0.02, 0, 1);
-  display: none;
-  pointer-events: none; }
-  @media (pointer: fine) {
-    .cursor {
-      display: block; } }
-
-.cursor2 {
-  --size: 2px;
-  transition-duration: .7s; }
 
 /* Form */
 form {
@@ -2163,10 +2146,10 @@ table.alt tbody tr td {
   -webkit-justify-content: -webkit-flex-end;
   -ms-justify-content: -ms-flex-end;
   justify-content: flex-end;
-  -moz-transition: opacity 1.2s ease, -moz-transform 1.2s ease;
-  -webkit-transition: opacity 1.2s ease, -webkit-transform 1.2s ease;
-  -ms-transition: opacity 1.2s ease, -ms-transform 1.2s ease;
-  transition: opacity 1.2s ease, transform 1.2s ease;
+  -moz-transition: opacity 1s ease, -moz-transform 1s ease;
+  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+  -ms-transition: opacity 1s ease, -ms-transform 1s ease;
+  transition: opacity 1s ease, transform 1s ease;
   position: relative;
   cursor: default;
   text-align: center;
