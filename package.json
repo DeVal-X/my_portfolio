@@ -5,7 +5,7 @@
     "vite": "latest"
   },
   "scripts": {
-    "compile-scss": "node-sass assets/sass/main.scss assets/css/sec.css",
+    "compile-scss": "node-sass assets/sass/main.scss assets/css/main.css",
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
