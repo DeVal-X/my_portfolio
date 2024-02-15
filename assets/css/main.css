@@ -2271,7 +2271,7 @@ table.alt tbody tr td {
   @media screen and (max-width: 980px) {
     #intro {
       padding: 4rem 4rem 2rem 4rem ;
-      min-height: 55vh; }
+      min-height: 50vh; }
       #intro p br {
         display: none; }
       #intro + #header {
