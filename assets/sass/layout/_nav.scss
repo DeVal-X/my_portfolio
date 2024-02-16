@@ -57,6 +57,7 @@
 
 						a {
 							color: _palette(invert, bg);
+              pointer-events: none;
 
 							&:hover {
 								color: _palette(invert, accent) !important;

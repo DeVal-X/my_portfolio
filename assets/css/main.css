@@ -2129,7 +2129,7 @@ table.alt tbody tr td {
 /* Intro */
 #intro {
   color: #ffffff;
-  padding: 8rem 4rem 6rem 4rem ;
+  padding: 6rem 4rem 6rem 4rem ;
   -moz-align-items: center;
   -webkit-align-items: center;
   -ms-align-items: center;
@@ -2253,7 +2253,7 @@ table.alt tbody tr td {
       opacity: 0; }
   @media screen and (max-width: 980px) {
     #intro {
-      padding: 4rem 4rem 2rem 4rem ;
+      padding: 2rem 4rem 2rem 4rem ;
       min-height: 50vh; }
       #intro p br {
         display: none; }
@@ -2261,7 +2261,7 @@ table.alt tbody tr td {
         margin-top: -14rem; } }
   @media screen and (max-width: 736px) {
     #intro {
-      padding: 3rem 2rem 1rem 2rem ;
+      padding: 1rem 2rem 1rem 2rem ;
       min-height: 40vh; }
       #intro h1 {
         font-size: 3.25rem;
@@ -2438,7 +2438,8 @@ table.alt tbody tr td {
       #nav ul.links li.active {
         background-color: #ffffff; }
         #nav ul.links li.active a {
-          color: #1e252d; }
+          color: #1e252d;
+          pointer-events: none; }
           #nav ul.links li.active a:hover {
             color: #18bfef !important; }
   #nav ul.icons {
@@ -2464,17 +2465,17 @@ table.alt tbody tr td {
   max-width: 72rem;
   z-index: 2; }
   #main > * {
-    padding: 4rem 4rem 2rem 4rem ;
-    border-top: solid 2px #eeeeee;
+    padding: 2rem 4rem 2rem 4rem ;
     margin: 0; }
     #main > *:first-child {
       border-top: 0; }
   #main > footer {
     text-align: center; }
   #main > .post {
-    padding: 8rem 8rem 6rem 8rem ; }
+    padding: 6rem 8rem 6rem 8rem ; }
     #main > .post header.major > .date {
-      margin-top: -2rem; }
+      margin-top: -2rem;
+      margin-bottom: -2rem; }
     #main > .post header.major > h1, #main > .post header.major h2 {
       font-size: 4rem;
       line-height: 1.1;
@@ -2483,10 +2484,10 @@ table.alt tbody tr td {
       text-align: center; }
     @media screen and (max-width: 1280px) {
       #main > .post {
-        padding: 6rem 4rem 4rem 4rem ; } }
+        padding: 4rem 4rem 4rem 4rem ; } }
     @media screen and (max-width: 736px) {
       #main > .post {
-        padding: 4rem 2rem 2rem 2rem ; }
+        padding: 2rem 2rem 2rem 2rem ; }
         #main > .post header.major > .date {
           margin-top: -1rem;
           margin-bottom: 2rem; }
@@ -2495,6 +2496,8 @@ table.alt tbody tr td {
           line-height: 1.2;
           margin: 0 0 1.5rem 0; } }
   #main > .posts {
+    position: relative;
+    overflow: hidden;
     display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
@@ -2562,7 +2565,7 @@ table.alt tbody tr td {
         margin-right: auto; } }
   @media screen and (max-width: 736px) {
     #main > * {
-      padding: 2rem 2rem 0.1rem 2rem ; } }
+      padding: 0.1rem 2rem 0.1rem 2rem ; } }
   @media screen and (max-width: 480px) {
     #main {
       width: 100%; } }
@@ -2727,7 +2730,7 @@ table.alt tbody tr td {
     -webkit-flex-shrink: 1;
     -ms-flex-shrink: 1;
     flex-shrink: 1;
-    padding: 4rem 4rem 2rem 4rem ;
+    padding: 2rem 4rem 2rem 4rem ;
     border-left: solid 2px #e2e2e2; }
     #footer > section:first-child {
       border-left: 0; }
@@ -2742,10 +2745,10 @@ table.alt tbody tr td {
       flex-direction: column;
       padding: 0; }
       #footer > section.split > section {
-        padding: 3rem 4rem 1rem 4rem ;
+        padding: 1rem 4rem 1rem 4rem ;
         border-top: solid 2px #e2e2e2; }
         #footer > section.split > section:first-child {
-          padding: 5rem 4rem 1rem 4rem ;
+          padding: 1rem 4rem 1rem 4rem ;
           border-top: 0; }
         #footer > section.split > section:last-child {
           padding: 3rem 4rem 3rem 4rem ; }
@@ -2803,11 +2806,11 @@ table.alt tbody tr td {
         #footer > section:first-child {
           border-top: 0; }
         #footer > section.split > section {
-          padding: 4rem 4rem 2rem 4rem ; }
+          padding: 2rem 4rem 2rem 4rem ; }
           #footer > section.split > section:first-child {
-            padding: 4rem 4rem 2rem 4rem ; }
+            padding: 2rem 4rem 2rem 4rem ; }
           #footer > section.split > section:last-child {
-            padding: 4rem 4rem 2rem 4rem ; }
+            padding: 2rem 4rem 2rem 4rem ; }
         #footer > section.split.contact > section {
           padding: 4rem; }
           #footer > section.split.contact > section:first-child {
@@ -2820,13 +2823,13 @@ table.alt tbody tr td {
         font-size: 0.9rem; } }
   @media screen and (max-width: 736px) {
     #footer > section {
-      padding: 2rem 2rem 0.1rem 2rem ; }
+      padding: 0.1rem 2rem 0.1rem 2rem ; }
       #footer > section.split > section {
-        padding: 2rem 2rem 0.1rem 2rem ; }
+        padding: 0.1rem 2rem 0.1rem 2rem ; }
         #footer > section.split > section:first-child {
-          padding: 2rem 2rem 0.1rem 2rem ; }
+          padding: 0.1rem 2rem 0.1rem 2rem ; }
         #footer > section.split > section:last-child {
-          padding: 2rem 2rem 0.1rem 2rem ; }
+          padding: 0.1rem 2rem 0.1rem 2rem ; }
       #footer > section.split.contact > section {
         padding: 2rem; }
         #footer > section.split.contact > section:first-child {

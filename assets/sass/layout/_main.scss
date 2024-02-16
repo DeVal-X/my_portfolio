@@ -10,7 +10,7 @@
 
 		> * {
 			@include padding((_size(padding) * 2), (_size(padding) * 2));
-			border-top: solid 2px _palette(border);
+			//border-top: solid 2px _palette(border);
 			margin: 0;
 
 			&:first-child {
@@ -29,6 +29,7 @@
 				&.major {
 					> .date {
 						margin-top: -2rem;
+            margin-bottom: -2rem;
 					}
 
 					> h1, h2 {
@@ -68,6 +69,9 @@
 		}
 
 		> .posts {
+      position: relative;
+      overflow: hidden;
+
 			@include fixed-grid((
 				columns:			2,
 				gutters:			(_size(padding) * 4),
