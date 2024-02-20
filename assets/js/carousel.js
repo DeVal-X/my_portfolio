@@ -29,6 +29,12 @@ const displayItems = (item, index, active) => {
   const zIndex = getZindex([...$items], active)[index]
   item.style.setProperty('--zIndex', zIndex)
   item.style.setProperty('--active', (index-active)/$items.length)
+
+  if (index === active ) {
+    item.querySelector('.title').classList.remove('untitle');
+  } else {
+    item.querySelector('.title').classList.add('untitle');
+  }
 }
 
 /*--------------------
