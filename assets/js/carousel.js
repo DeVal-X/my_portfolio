@@ -2,7 +2,7 @@
 Vars
 --------------------*/
 //cards est à changer en fonction du nombre de projets à présenter
-const cards = 8
+const cards = 7
 let progress = 10
 let startX = 0
 let active = 0

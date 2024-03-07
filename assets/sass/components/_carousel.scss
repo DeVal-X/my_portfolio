@@ -10,7 +10,7 @@
 
 .carousel-item {
   //items à changer en fonction du nombresde projets
-  --items: 8;
+  --items: 7;
   --width: clamp(200px, 30vw,  350px);
   --height: clamp(250px, 40vw,  450px);
   --x: calc(var(--active) * 1000%);
@@ -58,6 +58,13 @@
 
   }
 
+  a{
+    color:#fff;
+    text-decoration: none;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, .1);
+    width: 100%;
+  }
+
   .title {
     position: absolute;
     z-index: 1;
@@ -68,16 +75,12 @@
     font-size: clamp(30px, 3vw, 40px);
 
 
-    a{
-      color:#fff;
-      text-decoration: none;
-      text-shadow: 0 4px 4px rgba(0, 0, 0, .1);
-    }
+
   }
 
   .untitle{
     opacity: 0;
-    pointer-events: none;
+    //pointer-events: none;
     transition: opacity 0.6s cubic-bezier(0, 0.02, 0, 1);
   }
 
