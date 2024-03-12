@@ -18,6 +18,13 @@
 			display: block;
 		}
 
+    video {
+			//border-radius: _size(border-radius);
+      border-radius: 10px;
+			display: block;
+		}
+
+
 		&.left,
 		&.right {
 			max-width: 40%;
@@ -25,6 +32,10 @@
 			img {
 				width: 100%;
 			}
+
+      video {
+        width: 100%;
+      }
 		}
 
 		&.left {
@@ -51,6 +62,10 @@
 			img {
 				width: 100%;
 			}
+
+      video {
+        width: 100%;
+      }
 		}
 
 		&.main {
@@ -65,6 +80,16 @@
 			img {
 				width: 100%;
 			}
+
+      video {
+				width: 100%;
+			}
+
+      p {
+        text-align: center;
+        font-size: 90%;
+        color: rgba(20, 20, 20, 0.87);
+      }
 		}
 
 		@include breakpoint('<=small') {

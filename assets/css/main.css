@@ -874,9 +874,14 @@ input[type="radio"]:focus + label:before {
   .image img {
     border-radius: 10px;
     display: block; }
+  .image video {
+    border-radius: 10px;
+    display: block; }
   .image.left, .image.right {
     max-width: 40%; }
     .image.left img, .image.right img {
+      width: 100%; }
+    .image.left video, .image.right video {
       width: 100%; }
   .image.left {
     float: left;
@@ -894,6 +899,8 @@ input[type="radio"]:focus + label:before {
       margin-top: 0; }
     .image.fit img {
       width: 100%; }
+    .image.fit video {
+      width: 100%; }
   .image.main {
     display: block;
     margin: 4rem 0;
@@ -902,6 +909,12 @@ input[type="radio"]:focus + label:before {
       margin-top: 0; }
     .image.main img {
       width: 100%; }
+    .image.main video {
+      width: 100%; }
+    .image.main p {
+      text-align: center;
+      font-size: 90%;
+      color: rgba(20, 20, 20, 0.87); }
   @media screen and (max-width: 736px) {
     .image.fit {
       margin: 2rem 0; }
