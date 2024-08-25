@@ -8,6 +8,10 @@
 		max-width: _size(wrapper);
 		z-index: 2;
 
+    @include breakpoint('<=medium') {
+      border-radius: 10px 10px 0 0;
+    }
+
 		> * {
 			@include padding((_size(padding) * 2), (_size(padding) * 2));
 			//border-top: solid 2px _palette(border);
@@ -150,7 +154,10 @@
 			}
 		}
 
+    //override thede fault "width: calc(100% - #{_size(padding) * 2});" but i prefer it like that
+    /*
 		@include breakpoint('<=xsmall') {
 			width: 100%;
 		}
+      */
 	}
